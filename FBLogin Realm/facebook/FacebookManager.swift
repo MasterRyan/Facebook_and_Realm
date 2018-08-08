@@ -54,21 +54,22 @@ class FacebookManager: NSObject {
         responseHandler(storedResults, nil)
 
         FBSDKGraphRequest(graphPath: "me/accounts", parameters: [:]).start { _, result, _ in
-
-            guard let data = result as? [String: Any] else { responseHandler(nil, nil); return }
-            guard let dataArray = data["data"] as? [[String: Any]] else { responseHandler(nil, nil); return }
-            try? realm?.write {
-                for item in dataArray {
-                    let page = Page()
-                    page.name = item["name"] as? String ?? ""
-                    if storedResults?.contains(where: { (item) -> Bool in
-                        return item.name == page.name
-                    }) == false {
-                        realm?.add(page)
+            DispatchQueue.main.async {
+                guard let data = result as? [String: Any] else { responseHandler(nil, nil); return }
+                guard let dataArray = data["data"] as? [[String: Any]] else { responseHandler(nil, nil); return }
+                try? realm?.write {
+                    for item in dataArray {
+                        let page = Page()
+                        page.name = item["name"] as? String ?? ""
+                        if storedResults?.contains(where: { (item) -> Bool in
+                            return item.name == page.name
+                        }) == false {
+                            realm?.add(page)
+                        }
                     }
                 }
+                responseHandler(storedResults, nil)
             }
-            responseHandler(storedResults, nil)
 
         }
     }
