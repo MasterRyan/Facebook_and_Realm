@@ -31,7 +31,10 @@ class ViewController: UIViewController {
     }
 
     func registerNotification() {
-        NotificationCenter.default.addObserver(self, selector: #selector(dismissPage), name: .UIApplicationWillEnterForeground , object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(dismissPage),
+                                               name: .UIApplicationWillEnterForeground,
+                                               object: nil)
     }
 
     func removeNotifications() {
@@ -46,7 +49,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-

@@ -11,7 +11,7 @@ import FBSDKLoginKit
 import FBSDKCoreKit
 import RealmSwift
 
-class Page : Object {
+class Page: Object {
 
     @objc dynamic var name: String = ""
 
@@ -19,12 +19,15 @@ class Page : Object {
 
 class FacebookManager: NSObject {
 
-    public static func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+    public static func application(_ application: UIApplication,
+                                   didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
         // Override point for customization after application launch.
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
-    public static func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    public static func application(_ app: UIApplication,
+                                   open url: URL,
+                                   options: [UIApplicationOpenURLOptionsKey: Any] = [ : ]) -> Bool {
         return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
     }
 
@@ -42,7 +45,7 @@ class FacebookManager: NSObject {
         return FBSDKAccessToken.currentAccessTokenIsActive()
     }
 
-    static public func updateListOfPages(_ responseHandler: @escaping (Results<Page>?, Error?)->())  {
+    static public func updateListOfPages(_ responseHandler: @escaping (Results<Page>?, Error?) -> Void) {
 
         let realm = try? Realm()
         var storedResults: Results<Page>?
@@ -50,14 +53,14 @@ class FacebookManager: NSObject {
         storedResults = realm?.objects(Page.self)
         responseHandler(storedResults, nil)
 
-        FBSDKGraphRequest(graphPath: "me/accounts", parameters: [:]).start() { _, result, error in
+        FBSDKGraphRequest(graphPath: "me/accounts", parameters: [:]).start { _, result, _ in
 
-            guard let data = result as? Dictionary<String, Any> else { responseHandler(nil,nil); return }
-            guard let dataArray = data["data"] as? [Dictionary<String, Any>] else { responseHandler(nil,nil); return }
+            guard let data = result as? [String: Any] else { responseHandler(nil, nil); return }
+            guard let dataArray = data["data"] as? [[String: Any]] else { responseHandler(nil, nil); return }
             try? realm?.write {
                 for item in dataArray {
                     let page = Page()
-                    page.name = item["name"] as! String
+                    page.name = item["name"] as? String ?? ""
                     if storedResults?.contains(where: { (item) -> Bool in
                         return item.name == page.name
                     }) == false {
@@ -70,5 +73,3 @@ class FacebookManager: NSObject {
         }
     }
 }
-
-
