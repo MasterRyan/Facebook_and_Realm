@@ -6,6 +6,7 @@ target 'FBLogin Realm' do
   use_frameworks!
 
   # Pods for FBLogin Realm
+  pod 'FBSDKLoginKit', '~> 4.35.0'
 
   target 'FBLogin RealmTests' do
     inherit! :search_paths

@@ -13,6 +13,9 @@
 		2459A268211B388400A40445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2459A267211B388400A40445 /* Assets.xcassets */; };
 		2459A26B211B388400A40445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2459A269211B388400A40445 /* LaunchScreen.storyboard */; };
 		2459A276211B388400A40445 /* FBLogin_RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2459A275211B388400A40445 /* FBLogin_RealmTests.swift */; };
+		2459A282211B474D00A40445 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2459A281211B474D00A40445 /* FacebookManager.swift */; };
+		46B6CF4EBE5363368A58F2B2 /* Pods_FBLogin_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF51E8C142A3BAA6B4F7479 /* Pods_FBLogin_Realm.framework */; };
+		EF2CC38BD3F264DA14D8AFED /* Pods_FBLogin_RealmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63952A7CC45DC766EDF83260 /* Pods_FBLogin_RealmTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,13 @@
 		2459A271211B388400A40445 /* FBLogin RealmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FBLogin RealmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2459A275211B388400A40445 /* FBLogin_RealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLogin_RealmTests.swift; sourceTree = "<group>"; };
 		2459A277211B388400A40445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2459A281211B474D00A40445 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
+		28C9FD5E416C8775607D4A36 /* Pods-FBLogin RealmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLogin RealmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBLogin RealmTests/Pods-FBLogin RealmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BF51E8C142A3BAA6B4F7479 /* Pods_FBLogin_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLogin_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30491BF01B3C0C0D565C018A /* Pods-FBLogin Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLogin Realm.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBLogin Realm/Pods-FBLogin Realm.release.xcconfig"; sourceTree = "<group>"; };
+		63952A7CC45DC766EDF83260 /* Pods_FBLogin_RealmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLogin_RealmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6399829C599F87F25E1CA686 /* Pods-FBLogin RealmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLogin RealmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBLogin RealmTests/Pods-FBLogin RealmTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B4B39C8806BA48DBAB3441E /* Pods-FBLogin Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLogin Realm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBLogin Realm/Pods-FBLogin Realm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B6CF4EBE5363368A58F2B2 /* Pods_FBLogin_Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2CC38BD3F264DA14D8AFED /* Pods_FBLogin_RealmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +74,8 @@
 				2459A25F211B388100A40445 /* FBLogin Realm */,
 				2459A274211B388400A40445 /* FBLogin RealmTests */,
 				2459A25E211B388100A40445 /* Products */,
+				F57A0413BB53FEB523A4ED12 /* Pods */,
+				BE61CDE5F39644E7FEA1950D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +91,7 @@
 		2459A25F211B388100A40445 /* FBLogin Realm */ = {
 			isa = PBXGroup;
 			children = (
+				2459A280211B46F500A40445 /* facebook */,
 				2459A260211B388100A40445 /* AppDelegate.swift */,
 				2459A262211B388100A40445 /* ViewController.swift */,
 				2459A264211B388100A40445 /* Main.storyboard */,
@@ -96,6 +111,34 @@
 			path = "FBLogin RealmTests";
 			sourceTree = "<group>";
 		};
+		2459A280211B46F500A40445 /* facebook */ = {
+			isa = PBXGroup;
+			children = (
+				2459A281211B474D00A40445 /* FacebookManager.swift */,
+			);
+			path = facebook;
+			sourceTree = "<group>";
+		};
+		BE61CDE5F39644E7FEA1950D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BF51E8C142A3BAA6B4F7479 /* Pods_FBLogin_Realm.framework */,
+				63952A7CC45DC766EDF83260 /* Pods_FBLogin_RealmTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F57A0413BB53FEB523A4ED12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B4B39C8806BA48DBAB3441E /* Pods-FBLogin Realm.debug.xcconfig */,
+				30491BF01B3C0C0D565C018A /* Pods-FBLogin Realm.release.xcconfig */,
+				28C9FD5E416C8775607D4A36 /* Pods-FBLogin RealmTests.debug.xcconfig */,
+				6399829C599F87F25E1CA686 /* Pods-FBLogin RealmTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2459A27A211B388400A40445 /* Build configuration list for PBXNativeTarget "FBLogin Realm" */;
 			buildPhases = (
+				51E17484F895C14280189283 /* [CP] Check Pods Manifest.lock */,
 				2459A259211B388100A40445 /* Sources */,
 				2459A25A211B388100A40445 /* Frameworks */,
 				2459A25B211B388100A40445 /* Resources */,
+				A58B18C0769A2B1D130BF111 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2459A27D211B388400A40445 /* Build configuration list for PBXNativeTarget "FBLogin RealmTests" */;
 			buildPhases = (
+				A614486DB52C9ADC2963F79B /* [CP] Check Pods Manifest.lock */,
 				2459A26D211B388400A40445 /* Sources */,
 				2459A26E211B388400A40445 /* Frameworks */,
 				2459A26F211B388400A40445 /* Resources */,
@@ -192,11 +238,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51E17484F895C14280189283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBLogin Realm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A58B18C0769A2B1D130BF111 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FBLogin Realm/Pods-FBLogin Realm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBLogin Realm/Pods-FBLogin Realm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A614486DB52C9ADC2963F79B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBLogin RealmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2459A259211B388100A40445 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2459A282211B474D00A40445 /* FacebookManager.swift in Sources */,
 				2459A263211B388100A40445 /* ViewController.swift in Sources */,
 				2459A261211B388100A40445 /* AppDelegate.swift in Sources */,
 			);
@@ -356,6 +464,7 @@
 		};
 		2459A27B211B388400A40445 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4B39C8806BA48DBAB3441E /* Pods-FBLogin Realm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,6 +482,7 @@
 		};
 		2459A27C211B388400A40445 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30491BF01B3C0C0D565C018A /* Pods-FBLogin Realm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +500,7 @@
 		};
 		2459A27E211B388400A40445 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C9FD5E416C8775607D4A36 /* Pods-FBLogin RealmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +521,7 @@
 		};
 		2459A27F211B388400A40445 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6399829C599F87F25E1CA686 /* Pods-FBLogin RealmTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
