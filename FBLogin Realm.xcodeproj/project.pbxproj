@@ -14,6 +14,7 @@
 		2459A26B211B388400A40445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2459A269211B388400A40445 /* LaunchScreen.storyboard */; };
 		2459A276211B388400A40445 /* FBLogin_RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2459A275211B388400A40445 /* FBLogin_RealmTests.swift */; };
 		2459A282211B474D00A40445 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2459A281211B474D00A40445 /* FacebookManager.swift */; };
+		2459A285211B559200A40445 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2459A284211B559200A40445 /* LoadingViewController.swift */; };
 		46B6CF4EBE5363368A58F2B2 /* Pods_FBLogin_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF51E8C142A3BAA6B4F7479 /* Pods_FBLogin_Realm.framework */; };
 		EF2CC38BD3F264DA14D8AFED /* Pods_FBLogin_RealmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63952A7CC45DC766EDF83260 /* Pods_FBLogin_RealmTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		2459A275211B388400A40445 /* FBLogin_RealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLogin_RealmTests.swift; sourceTree = "<group>"; };
 		2459A277211B388400A40445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2459A281211B474D00A40445 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
+		2459A284211B559200A40445 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		28C9FD5E416C8775607D4A36 /* Pods-FBLogin RealmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLogin RealmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBLogin RealmTests/Pods-FBLogin RealmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2BF51E8C142A3BAA6B4F7479 /* Pods_FBLogin_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLogin_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30491BF01B3C0C0D565C018A /* Pods-FBLogin Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLogin Realm.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBLogin Realm/Pods-FBLogin Realm.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		2459A25F211B388100A40445 /* FBLogin Realm */ = {
 			isa = PBXGroup;
 			children = (
+				2459A283211B555600A40445 /* View Controllers */,
 				2459A280211B46F500A40445 /* facebook */,
 				2459A260211B388100A40445 /* AppDelegate.swift */,
 				2459A262211B388100A40445 /* ViewController.swift */,
@@ -117,6 +120,14 @@
 				2459A281211B474D00A40445 /* FacebookManager.swift */,
 			);
 			path = facebook;
+			sourceTree = "<group>";
+		};
+		2459A283211B555600A40445 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2459A284211B559200A40445 /* LoadingViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		BE61CDE5F39644E7FEA1950D /* Frameworks */ = {
@@ -307,6 +318,7 @@
 				2459A282211B474D00A40445 /* FacebookManager.swift in Sources */,
 				2459A263211B388100A40445 /* ViewController.swift in Sources */,
 				2459A261211B388100A40445 /* AppDelegate.swift in Sources */,
+				2459A285211B559200A40445 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
