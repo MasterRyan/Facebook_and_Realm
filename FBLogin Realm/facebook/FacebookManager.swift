@@ -9,9 +9,12 @@
 import Foundation
 import FBSDKLoginKit
 import FBSDKCoreKit
+import RealmSwift
 
-struct Page {
-    let name: String!
+class Page : Object {
+
+    @objc dynamic var name: String = ""
+
 }
 
 class FacebookManager: NSObject {
@@ -33,21 +36,37 @@ class FacebookManager: NSObject {
     }
 
     static public func isLoggedin() -> Bool {
+        updateListOfPages { (result, _) in
+            print(result ?? "nil")
+        }
         return FBSDKAccessToken.currentAccessTokenIsActive()
     }
 
-    static public func updateListOfPages(_ responseHandler: @escaping ([Page]?, Error?)->())  {
+    static public func updateListOfPages(_ responseHandler: @escaping (Results<Page>?, Error?)->())  {
+
+        let realm = try? Realm()
+        var storedResults: Results<Page>?
+
+        storedResults = realm?.objects(Page.self)
+        responseHandler(storedResults, nil)
+
         FBSDKGraphRequest(graphPath: "me/accounts", parameters: [:]).start() { _, result, error in
 
             guard let data = result as? Dictionary<String, Any> else { responseHandler(nil,nil); return }
             guard let dataArray = data["data"] as? [Dictionary<String, Any>] else { responseHandler(nil,nil); return }
-
-            let returnArray = dataArray.filter { (item) in
-                return (item["name"] as? String != nil) // ensure it has a name
-            }.map { (item) in
-                Page(name: item["name"] as! String)
+            try? realm?.write {
+                for item in dataArray {
+                    let page = Page()
+                    page.name = item["name"] as! String
+                    if storedResults?.contains(where: { (item) -> Bool in
+                        return item.name == page.name
+                    }) == false {
+                        realm?.add(page)
+                    }
+                }
             }
-            responseHandler(returnArray, nil)
+            responseHandler(storedResults, nil)
+
         }
     }
 }

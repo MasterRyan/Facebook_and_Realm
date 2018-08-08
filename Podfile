@@ -7,7 +7,7 @@ target 'FBLogin Realm' do
 
   # Pods for FBLogin Realm
   pod 'FBSDKLoginKit', '~> 4.35.0'
-  pod 'FBSDKGraphKit'
+  pod 'RealmSwift', '~> 3.7.5'
   
 
   target 'FBLogin RealmTests' do
