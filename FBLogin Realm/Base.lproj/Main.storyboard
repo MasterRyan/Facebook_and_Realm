@@ -22,6 +22,7 @@
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showLogin" id="0oa-FB-JPR"/>
+                        <segue destination="UBW-nD-fR0" kind="show" identifier="enterApp" id="6Rn-6b-0Oq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcy-f4-Ae9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -41,6 +42,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="49" y="92"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O2N-Nx-TNz">
+            <objects>
+                <viewController id="UBW-nD-fR0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wHw-hT-g7c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hdu-wc-Leg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRE-At-Wll" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="820"/>
         </scene>
     </scenes>
 </document>
