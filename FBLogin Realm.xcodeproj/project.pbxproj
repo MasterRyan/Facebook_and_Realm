@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2459A261211B388100A40445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2459A260211B388100A40445 /* AppDelegate.swift */; };
+		2459A263211B388100A40445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2459A262211B388100A40445 /* ViewController.swift */; };
+		2459A266211B388100A40445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2459A264211B388100A40445 /* Main.storyboard */; };
+		2459A268211B388400A40445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2459A267211B388400A40445 /* Assets.xcassets */; };
+		2459A26B211B388400A40445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2459A269211B388400A40445 /* LaunchScreen.storyboard */; };
+		2459A276211B388400A40445 /* FBLogin_RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2459A275211B388400A40445 /* FBLogin_RealmTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2459A272211B388400A40445 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2459A255211B388100A40445 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2459A25C211B388100A40445;
+			remoteInfo = "FBLogin Realm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2459A25D211B388100A40445 /* FBLogin Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FBLogin Realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2459A260211B388100A40445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2459A262211B388100A40445 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2459A265211B388100A40445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2459A267211B388400A40445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2459A26A211B388400A40445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2459A26C211B388400A40445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2459A271211B388400A40445 /* FBLogin RealmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FBLogin RealmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2459A275211B388400A40445 /* FBLogin_RealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLogin_RealmTests.swift; sourceTree = "<group>"; };
+		2459A277211B388400A40445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2459A25A211B388100A40445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2459A26E211B388400A40445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2459A254211B388100A40445 = {
+			isa = PBXGroup;
+			children = (
+				2459A25F211B388100A40445 /* FBLogin Realm */,
+				2459A274211B388400A40445 /* FBLogin RealmTests */,
+				2459A25E211B388100A40445 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2459A25E211B388100A40445 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2459A25D211B388100A40445 /* FBLogin Realm.app */,
+				2459A271211B388400A40445 /* FBLogin RealmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2459A25F211B388100A40445 /* FBLogin Realm */ = {
+			isa = PBXGroup;
+			children = (
+				2459A260211B388100A40445 /* AppDelegate.swift */,
+				2459A262211B388100A40445 /* ViewController.swift */,
+				2459A264211B388100A40445 /* Main.storyboard */,
+				2459A267211B388400A40445 /* Assets.xcassets */,
+				2459A269211B388400A40445 /* LaunchScreen.storyboard */,
+				2459A26C211B388400A40445 /* Info.plist */,
+			);
+			path = "FBLogin Realm";
+			sourceTree = "<group>";
+		};
+		2459A274211B388400A40445 /* FBLogin RealmTests */ = {
+			isa = PBXGroup;
+			children = (
+				2459A275211B388400A40445 /* FBLogin_RealmTests.swift */,
+				2459A277211B388400A40445 /* Info.plist */,
+			);
+			path = "FBLogin RealmTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2459A25C211B388100A40445 /* FBLogin Realm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2459A27A211B388400A40445 /* Build configuration list for PBXNativeTarget "FBLogin Realm" */;
+			buildPhases = (
+				2459A259211B388100A40445 /* Sources */,
+				2459A25A211B388100A40445 /* Frameworks */,
+				2459A25B211B388100A40445 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FBLogin Realm";
+			productName = "FBLogin Realm";
+			productReference = 2459A25D211B388100A40445 /* FBLogin Realm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2459A270211B388400A40445 /* FBLogin RealmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2459A27D211B388400A40445 /* Build configuration list for PBXNativeTarget "FBLogin RealmTests" */;
+			buildPhases = (
+				2459A26D211B388400A40445 /* Sources */,
+				2459A26E211B388400A40445 /* Frameworks */,
+				2459A26F211B388400A40445 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2459A273211B388400A40445 /* PBXTargetDependency */,
+			);
+			name = "FBLogin RealmTests";
+			productName = "FBLogin RealmTests";
+			productReference = 2459A271211B388400A40445 /* FBLogin RealmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2459A255211B388100A40445 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Ryan;
+				TargetAttributes = {
+					2459A25C211B388100A40445 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					2459A270211B388400A40445 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 2459A25C211B388100A40445;
+					};
+				};
+			};
+			buildConfigurationList = 2459A258211B388100A40445 /* Build configuration list for PBXProject "FBLogin Realm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2459A254211B388100A40445;
+			productRefGroup = 2459A25E211B388100A40445 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2459A25C211B388100A40445 /* FBLogin Realm */,
+				2459A270211B388400A40445 /* FBLogin RealmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2459A25B211B388100A40445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2459A26B211B388400A40445 /* LaunchScreen.storyboard in Resources */,
+				2459A268211B388400A40445 /* Assets.xcassets in Resources */,
+				2459A266211B388100A40445 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2459A26F211B388400A40445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2459A259211B388100A40445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2459A263211B388100A40445 /* ViewController.swift in Sources */,
+				2459A261211B388100A40445 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2459A26D211B388400A40445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2459A276211B388400A40445 /* FBLogin_RealmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2459A273211B388400A40445 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2459A25C211B388100A40445 /* FBLogin Realm */;
+			targetProxy = 2459A272211B388400A40445 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2459A264211B388100A40445 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2459A265211B388100A40445 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2459A269211B388400A40445 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2459A26A211B388400A40445 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2459A278211B388400A40445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2459A279211B388400A40445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2459A27B211B388400A40445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FBLogin Realm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryan.matthew.FBLogin-Realm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2459A27C211B388400A40445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FBLogin Realm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryan.matthew.FBLogin-Realm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2459A27E211B388400A40445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FBLogin RealmTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryan.matthew.FBLogin-RealmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBLogin Realm.app/FBLogin Realm";
+			};
+			name = Debug;
+		};
+		2459A27F211B388400A40445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FBLogin RealmTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryan.matthew.FBLogin-RealmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBLogin Realm.app/FBLogin Realm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2459A258211B388100A40445 /* Build configuration list for PBXProject "FBLogin Realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2459A278211B388400A40445 /* Debug */,
+				2459A279211B388400A40445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2459A27A211B388400A40445 /* Build configuration list for PBXNativeTarget "FBLogin Realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2459A27B211B388400A40445 /* Debug */,
+				2459A27C211B388400A40445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2459A27D211B388400A40445 /* Build configuration list for PBXNativeTarget "FBLogin RealmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2459A27E211B388400A40445 /* Debug */,
+				2459A27F211B388400A40445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2459A255211B388100A40445 /* Project object */;
+}
