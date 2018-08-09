@@ -19,6 +19,11 @@ class Page: Object {
 
 class FacebookManager: NSObject {
 
+    private static let shared = FacebookManager()
+
+    static let loggedOutNotification = Notification.Name("loggedOutNotification")
+    static let loggedInNotification = Notification.Name("loggedInNotification")
+
     public static func application(_ application: UIApplication,
                                    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
         // Override point for customization after application launch.
@@ -35,14 +40,24 @@ class FacebookManager: NSObject {
 
         let loginButton = FBSDKLoginButton()
         loginButton.publishPermissions = ["manage_pages"] //move to config plist
+        loginButton.delegate = shared
         return loginButton
     }
 
     static public func isLoggedin() -> Bool {
-        updateListOfPages { (result, _) in
-            print(result ?? "nil")
+        if FBSDKAccessToken.currentAccessTokenIsActive() {
+            return true
         }
-        return FBSDKAccessToken.currentAccessTokenIsActive()
+
+        if let realm = try? Realm() {
+            try? realm.write {
+                realm.deleteAll()
+            }
+        }
+
+        NotificationCenter.default.post(name: loggedOutNotification, object: nil)
+
+        return false
     }
 
     static public func updateListOfPages(_ responseHandler: @escaping (Results<Page>?, Error?) -> Void) {
@@ -73,4 +88,19 @@ class FacebookManager: NSObject {
 
         }
     }
+}
+
+extension FacebookManager: FBSDKLoginButtonDelegate {
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+
+        if FBSDKAccessToken.currentAccessTokenIsActive() {
+            NotificationCenter.default.post(name: FacebookManager.loggedInNotification, object: nil)
+        }
+    }
+
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        NotificationCenter.default.post(name: FacebookManager.loggedOutNotification, object: nil)
+    }
+
+
 }

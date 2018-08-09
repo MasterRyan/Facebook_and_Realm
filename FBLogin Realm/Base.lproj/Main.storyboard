@@ -79,9 +79,9 @@
                                     <outlet property="dataSource" destination="UBW-nD-fR0" id="0qc-VK-aUO"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-N2-ixt">
-                                <rect key="frame" x="16" y="539" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-N2-ixt">
+                                <rect key="frame" x="0.0" y="622.5" width="375" height="44.5"/>
+                                <color key="backgroundColor" red="1" green="0.18011042369999999" blue="0.99481930890000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

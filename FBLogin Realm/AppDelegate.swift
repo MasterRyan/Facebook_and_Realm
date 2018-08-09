@@ -26,4 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return FacebookManager.application(app, open: url, options: options)
     }
 
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        if FacebookManager.isLoggedin() { print("facebook logged in") }
+    }
+
 }

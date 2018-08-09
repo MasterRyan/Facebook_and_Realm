@@ -14,12 +14,13 @@ class PageListViewController: UIViewController {
     @IBOutlet weak var logoutHolder: UIView!
     @IBOutlet weak var table: UITableView!
 
+    let logoutButton = FacebookManager.loginButton()
+
     var pages: Results<Page>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let logoutButton = FacebookManager.loginButton()
-        logoutButton.center = self.logoutHolder.center
+
         self.logoutHolder.addSubview(logoutButton)
 
         FacebookManager.updateListOfPages { [weak self] (pages, _) in
@@ -29,10 +30,31 @@ class PageListViewController: UIViewController {
             self?.table.reloadData()
 
         }
+
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(dismissAnimated),
+                                               name: FacebookManager.loggedOutNotification,
+                                               object: nil)
     }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let xPos = logoutHolder.bounds.size.width/2
+        let yPos = logoutHolder.bounds.size.height/2
+        logoutButton.center = CGPoint(x: xPos, y: yPos)
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @objc func dismissAnimated() {
+        dismiss(animated: true, completion: nil)
     }
 
 }

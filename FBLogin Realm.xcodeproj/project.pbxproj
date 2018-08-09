@@ -98,7 +98,6 @@
 				2459A283211B555600A40445 /* View Controllers */,
 				2459A280211B46F500A40445 /* facebook */,
 				2459A260211B388100A40445 /* AppDelegate.swift */,
-				2459A262211B388100A40445 /* ViewController.swift */,
 				2459A264211B388100A40445 /* Main.storyboard */,
 				2459A267211B388400A40445 /* Assets.xcassets */,
 				2459A269211B388400A40445 /* LaunchScreen.storyboard */,
@@ -127,6 +126,7 @@
 		2459A283211B555600A40445 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2459A262211B388100A40445 /* ViewController.swift */,
 				2459A284211B559200A40445 /* LoadingViewController.swift */,
 				2459A287211B9A8300A40445 /* PageListViewController.swift */,
 			);
